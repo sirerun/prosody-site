@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" role="img" aria-label="Prosody">
+  <defs>
+    <!-- Accent gradient: warm "live voice" — used ONLY on the center bar -->
+    <linearGradient id="live" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%"  stop-color="#FF6A3D"/>
+      <stop offset="100%" stop-color="#FFB03D"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .bar    { fill: #1A1D23; }          /* ink — near-black, not pure black */
+    .bar.live { fill: url(#live); }
+    .word   { font: 600 64px/1 "SF Pro Display", "Helvetica Neue", system-ui, sans-serif;
+              fill: #1A1D23; letter-spacing: -0.02em; }
+    /* Animation: the mark is the LiveProsodyMark at rest → idle breathing.
+       prefers-reduced-motion honored, per the accessibility discipline. */
+    @media (prefers-reduced-motion: no-preference) {
+      .b1 { animation: b1 1.6s ease-in-out infinite; }
+      .b2 { animation: b2 1.6s ease-in-out infinite .12s; }
+      .b4 { animation: b2 1.6s ease-in-out infinite .24s; }
+      .b5 { animation: b1 1.6s ease-in-out infinite .36s; }
+    }
+    @keyframes b1 { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(.55); } }
+    @keyframes b2 { 0%,100% { transform: scaleY(.55); } 50% { transform: scaleY(1); } }
+    .bar, .bar.live { transform-origin: center 100px; transform-box: fill-box; }
+  </style>
+
+  <!-- The mark: five bars, symmetric envelope, center bar live.
+       Heights: 32 / 68 / 112 / 68 / 32 — a natural speech envelope. -->
+  <g>
+    <rect class="bar b1"    x="20"  y="84"  width="16" height="32"  rx="8"/>
+    <rect class="bar b2"    x="52"  y="66"  width="16" height="68"  rx="8"/>
+    <rect class="bar live"  x="84"  y="44"  width="16" height="112" rx="8"/>
+    <rect class="bar b4"    x="116" y="66"  width="16" height="68"  rx="8"/>
+    <rect class="bar b5"    x="148" y="84"  width="16" height="32"  rx="8"/>
+  </g>
+
+  <!-- Wordmark: lowercase, tight — conversational, not enterprise -->
+  <text class="word" x="204" y="124">prosody</text>
+</svg>

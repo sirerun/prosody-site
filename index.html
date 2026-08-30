@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prosody — a voice remote control for your coding agent</title>
+<meta name="description" content="Prosody is a self-hosted, voice-driven remote control for Claude Code and other coding agents. Talk to a running session, hear it think, approve or deny from your phone — on hardware you already own.">
+<meta name="theme-color" content="#0B0D12">
+<link rel="icon" href="/assets/prosody-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+<header class="container site-nav">
+  <a class="brand" href="/">
+    <span class="brand-mark"><img src="/assets/prosody-mark.svg" alt="" width="34" height="34"></span>
+    prosody
+  </a>
+  <nav class="nav-links">
+    <a href="#how-it-works">How it works</a>
+    <a href="#architecture">Architecture</a>
+    <a class="nav-cta" href="/privacy">Privacy policy</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero container">
+    <div>
+      <span class="chip"><span class="dot"></span>TestFlight — private beta</span>
+      <h1>Leave your desk.<br>Keep the session.</h1>
+      <p class="lede">
+        Prosody is a voice-driven remote control for Claude Code and other
+        coding agents. Watch a session progress, hear it think, answer an
+        approval — from your phone, on a walk, in another room. It runs
+        entirely on hardware you already own.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#how-it-works">See how it works</a>
+        <a class="btn btn-ghost" href="/privacy">Privacy policy</a>
+      </div>
+      <div class="hero-chips">
+        <span class="chip"><span class="dot" style="background:var(--teal)"></span>Self-hosted gateway</span>
+        <span class="chip"><span class="dot" style="background:var(--accent-warm)"></span>On-device voice</span>
+        <span class="chip"><span class="dot" style="background:var(--teal)"></span>No accounts</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="mark-wrap">
+        <img src="/assets/prosody-mark.svg" alt="" width="480" height="480">
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="what-it-does">
+    <p class="section-eyebrow">What it does</p>
+    <h2 class="section-title">A phone line to a session that's already running</h2>
+    <div class="card-grid">
+      <article class="card">
+        <span class="kicker">Live session view</span>
+        <h3>See every turn</h3>
+        <p>Prosody tails your agent's real transcript and speaks its turns
+          back to you — condensed into short, conversational sentences
+          instead of raw markdown, paths, and tool chatter.</p>
+      </article>
+      <article class="card">
+        <span class="kicker">Approval flow</span>
+        <h3>Approve from your phone</h3>
+        <p>Consequential tool calls still stop and ask. Allow or deny by
+          voice or a tap — your agent waits on your answer, it never
+          guesses and it never auto-approves on timeout.</p>
+      </article>
+      <article class="card">
+        <span class="kicker">Self-hosted</span>
+        <h3>Yours end to end</h3>
+        <p>The gateway runs on a Mac or Linux box you own. Your phone talks
+          to it directly over your own network — no account, no relay, no
+          Prosody-run server sitting in between.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="container" id="how-it-works">
+    <p class="section-eyebrow">How it works</p>
+    <h2 class="section-title">Four steps, all of them on your own machines</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <h3>Run the gateway</h3>
+          <p>A small background service runs on each machine hosting a
+            coding session — a Mac mini, a laptop, a workstation. It reads
+            your agent's session state directly; nothing is uploaded
+            anywhere to make this work.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <h3>Pair your phone</h3>
+          <p>Enter a pairing code once. The app and your gateway trust each
+            other over an encrypted connection from then on — no account,
+            no login, no identity anyone but you manages.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <h3>Walk away</h3>
+          <p>Keep talking to your session over your own Wi-Fi. Hear it
+            work, speak your replies, glance at the screen only when you
+            want to. A private tailnet for reaching it away from home is
+            next.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div>
+          <h3>Approve what matters</h3>
+          <p>Every consequential step still stops and asks before it runs.
+            Prosody adds a voice channel to that decision — it doesn't
+            remove the decision.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="architecture">
+    <p class="section-eyebrow">Architecture</p>
+    <h2 class="section-title">Built for people who already run their own machines</h2>
+    <div class="status-strip">
+      <div>
+        <div class="label">Voice</div>
+        <div class="value">on-device (Apple Speech) — no audio leaves your phone</div>
+      </div>
+      <div>
+        <div class="label">Transport</div>
+        <div class="value">TLS, trusted on first pairing</div>
+      </div>
+      <div>
+        <div class="label">Reachability</div>
+        <div class="value">your home network today, a private tailnet next</div>
+      </div>
+      <div>
+        <div class="label">Accounts</div>
+        <div class="value">none</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="container site-footer">
+  <span>&copy; 2026 Prosody. Self-hosted. No accounts.</span>
+  <span><a href="/privacy">Privacy policy</a></span>
+</footer>
+
+</body>
+</html>
