@@ -9,44 +9,22 @@
 <link rel="icon" href="/assets/prosody-mark.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body>
-<header class="site-nav wrap">
-  <a class="brand" href="/" aria-label="Prosody home"><img src="/assets/prosody-mark.svg" width="35" height="35" alt="">prosody</a>
-  <nav aria-label="Main navigation"><a href="#experience">The experience</a><a href="#how-it-works">How it works</a><a href="/privacy">Privacy</a></nav>
-</header>
-<main>
-  <section class="hero wrap">
-    <div class="hero-copy">
-      <p class="eyebrow"><span></span> A new way to keep up</p>
-      <h1>Make room<br>to <em>listen.</em></h1>
-      <p class="lead">Your agents do the work. Prosody brings you the story, in a briefing made for listening.</p>
-      <a class="button" href="#experience">Explore Prosody <span aria-hidden="true">↗</span></a>
-      <p class="availability">Prosody is in development.</p>
-    </div>
-    <div class="player-scene" aria-label="Illustration of the planned Prosody listening experience">
-      <div class="scene-label">A little more clarity, wherever you are.</div>
-      <div class="player">
-        <div class="player-top"><span>YOUR BRIEFING</span><span>•••</span></div>
-        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-        <div class="player-text"><span>READY WHEN YOU ARE</span><h2>A clearer picture<br>of what matters.</h2><p>Your next briefing, made for listening.</p></div>
-        <div class="progress"><span></span></div>
-        <div class="player-bottom"><span>0:00</span><span class="play" aria-hidden="true">▶</span><span>LISTEN</span></div>
-      </div>
-      <div class="scene-foot">LESS SCROLLING <span>✳</span> MORE UNDERSTANDING</div>
-    </div>
+<body class="showcase">
+<a class="back-link" href="/privacy" aria-label="Privacy information">↗</a>
+<main class="welcome-card">
+  <a class="brand" href="/" aria-label="Prosody home"><img src="/assets/prosody-mark.svg" width="42" height="42" alt="">prosody</a>
+  <h1>Make room<br>to listen.</h1>
+  <p class="welcome-description">Your agents do the work.<br>Hear what matters, wherever you are.</p>
+  <section class="app-preview" aria-label="Prosody app preview" aria-roledescription="carousel">
+    <div class="phone-frame"><img id="app-screen" src="/assets/screens/inbox.svg" width="393" height="852" alt="Inbox mockup showing updates from Claude Code, Codex, and Muse."></div>
+    <div class="slide-controls"><button type="button" id="previous-slide" aria-label="Previous screen">←</button><span id="slide-caption" aria-live="polite">1 / 3 · Your inbox</span><button type="button" id="next-slide" aria-label="Next screen">→</button></div>
+    <button type="button" id="slide-play" aria-pressed="false">Play slideshow</button>
+    <p class="preview-note">App concept · Illustrative messages</p>
   </section>
-  <section class="intro wrap" id="experience">
-    <p class="eyebrow">A little space to think</p>
-    <div><h2>Good work deserves<br>a good telling.</h2><p>There’s a lot your agents can do for you. Prosody is being built to turn their output into concise, natural briefings you can take with you.</p></div>
-  </section>
-  <section class="features wrap" aria-label="The planned experience">
-    <article><span class="feature-number">01 / LISTEN</span><div class="feature-icon">◖))</div><h3>Hear the important parts.</h3><p>Get the result, the context, and the details that matter in a briefing designed for your ears.</p></article>
-    <article><span class="feature-number">02 / FOLLOW ALONG</span><div class="feature-icon">▧</div><h3>See the whole picture.</h3><p>Follow along with images and supplied media, and return to the original source when you want to go deeper.</p></article>
-    <article><span class="feature-number">03 / KEEP MOVING</span><div class="feature-icon">↗</div><h3>Take it at your pace.</h3><p>Move through your queue, pick up where you left off, and make listening part of your day.</p></article>
-  </section>
-  <section class="how wrap" id="how-it-works"><div><p class="eyebrow">How it’s imagined</p><h2>From your agents<br>to your ears.</h2></div><div class="steps"><div><span>01</span><p><strong>Connect an agent.</strong> Give a compatible agent a place to send its work.</p></div><div><span>02</span><p><strong>Make it a briefing.</strong> Prosody is designed to shape text into a concise narration, alongside any supplied media.</p></div><div><span>03</span><p><strong>Listen when it suits you.</strong> Open your feed and catch up one item at a time.</p></div></div></section>
-  <section class="closing wrap"><div><p class="eyebrow">More signal. More space.</p><h2>There’s more than one<br>way to stay in the loop.</h2><p>Prosody is in development. More to come.</p></div><img src="/assets/prosody-mark.svg" alt="" width="120" height="120"></section>
+  <p class="card-note">A new way to keep up. <span>In development.</span></p>
+  <a class="privacy-link" href="/privacy">Privacy</a>
+  <footer class="copyright">Copyright Sire Run, Inc. Built in California.</footer>
 </main>
-<footer class="wrap"><a class="brand" href="/"><img src="/assets/prosody-mark.svg" width="28" height="28" alt="">prosody</a><span>Make room to listen.</span><a href="/privacy">Privacy</a><span>© 2026 Prosody</span></footer>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>
