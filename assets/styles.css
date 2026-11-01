@@ -10,3 +10,19 @@
 .app-preview{margin:32px auto 20px;width:100%;max-width:310px}.phone-frame{border:7px solid var(--ink);border-radius:42px;overflow:hidden;background:var(--paper);box-shadow:0 20px 55px #161a241c;aspect-ratio:407/866}.phone-frame img{display:block;width:100%;height:100%;object-fit:contain}.slide-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:24px}.slide-controls button{border:1px solid var(--line);background:var(--white);color:var(--ink);border-radius:50%;width:44px;height:44px;font-size:20px;cursor:pointer}.slide-controls button:hover{background:var(--soft)}#slide-caption{font-size:11px;color:var(--muted)}#slide-play{font:inherit;font-size:11px;color:var(--blue);border:0;background:none;min-height:44px;cursor:pointer}.preview-note{font-size:10px;color:var(--muted);margin:0 0 20px}
 
 .welcome-card .copyright{display:block;padding:20px 0 0;font-size:10px;line-height:1.6}
+
+/* Responsive landing layout: readable message and a full-scale phone preview. */
+.showcase{padding:40px clamp(20px,5vw,80px)}
+.welcome-card{width:min(1120px,100%);display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,340px);column-gap:clamp(32px,6vw,90px);padding:40px clamp(24px,5vw,64px);text-align:left;box-shadow:0 20px 90px #3154d90d}
+.welcome-card>.brand{grid-column:1;align-self:start;justify-self:start}
+.hero-message{grid-column:1;grid-row:2;align-self:center;padding:30px 0}
+.welcome-card h1{font-size:clamp(36px,4vw,54px);line-height:1.08;margin:0 0 24px;letter-spacing:-.05em}
+.welcome-card h1 span{color:var(--blue)}
+.welcome-description{font-size:17px;line-height:1.65;max-width:43ch}
+.development-note{font-size:12px;color:var(--muted);margin-top:28px}
+.app-preview{grid-column:2;grid-row:1 / 5;max-width:280px;margin:0 auto;text-align:center}
+.welcome-card>.card-note{display:none}
+.welcome-card>.privacy-link{grid-column:1;align-self:end;font-size:12px}
+.welcome-card>.copyright{grid-column:1;padding:18px 0 0;font-size:11px;line-height:1.6;display:block;margin:0;color:var(--muted)}
+.back-link{display:none}
+@media(max-width:760px){.showcase{padding:20px 16px}.welcome-card{display:flex;flex-direction:column;gap:0;padding:28px 24px;border-radius:24px}.hero-message{padding:40px 0 20px}.welcome-card h1{font-size:clamp(33px,7vw,46px)}.welcome-description{font-size:16px}.app-preview{width:min(280px,100%);margin:12px auto 24px}.welcome-card>.privacy-link{align-self:center}.welcome-card>.copyright{text-align:center;padding-top:12px}}
