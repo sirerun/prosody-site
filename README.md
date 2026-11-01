@@ -1,13 +1,9 @@
 # prosody.chat
 
-Marketing site for Prosody — a self-hosted, voice-driven remote control for
-Claude Code and other coding agents. Plain static HTML/CSS, no build step,
-served by GitHub Pages.
+Static informational site for Prosody, the agent briefing product in development. The application source and current implementation status live in `../../narrate-it/prosody`.
 
-- `index.html` — home/landing page
-- `privacy.html` — served at `/privacy`
-- `assets/` — brand marks and the shared stylesheet
-- `docs/design/prosody-site/` — the design record (POV, tokens, decision
-  log, rendered screenshots)
+- `index.html` — landing page
+- `privacy.html` — website privacy information, served at `/privacy`
+- `assets/` — identity and shared styles
 
-Prosody's application code lives in a separate, internal repository.
+No build step is required. The player is an illustration of the intended experience, not a working product demo.

@@ -3,157 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Prosody — a voice remote control for your coding agent</title>
-<meta name="description" content="Prosody is a self-hosted, voice-driven remote control for Claude Code and other coding agents. Talk to a running session, hear it think, approve or deny from your phone — on hardware you already own.">
-<meta name="theme-color" content="#0B0D12">
+<meta name="theme-color" content="#f5f6f8">
+<title>Prosody — Make room to listen</title>
+<meta name="description" content="Prosody is a new way to listen to briefings from your AI agents. Follow the work, wherever you are.">
 <link rel="icon" href="/assets/prosody-mark.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
-
-<header class="container site-nav">
-  <a class="brand" href="/">
-    <span class="brand-mark"><img src="/assets/prosody-mark.svg" alt="" width="34" height="34"></span>
-    prosody
-  </a>
-  <nav class="nav-links">
-    <a href="#how-it-works">How it works</a>
-    <a href="#architecture">Architecture</a>
-    <a class="nav-cta" href="/privacy">Privacy policy</a>
-  </nav>
+<header class="site-nav wrap">
+  <a class="brand" href="/" aria-label="Prosody home"><img src="/assets/prosody-mark.svg" width="35" height="35" alt="">prosody</a>
+  <nav aria-label="Main navigation"><a href="#experience">The experience</a><a href="#how-it-works">How it works</a><a href="/privacy">Privacy</a></nav>
 </header>
-
 <main>
-  <section class="hero container">
-    <div>
-      <span class="chip"><span class="dot"></span>TestFlight — private beta</span>
-      <h1>Leave your desk.<br>Keep the session.</h1>
-      <p class="lede">
-        Prosody is a voice-driven remote control for Claude Code and other
-        coding agents. Watch a session progress, hear it think, answer an
-        approval — from your phone, on a walk, in another room. It runs
-        entirely on hardware you already own.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#how-it-works">See how it works</a>
-        <a class="btn btn-ghost" href="/privacy">Privacy policy</a>
-      </div>
-      <div class="hero-chips">
-        <span class="chip"><span class="dot" style="background:var(--teal)"></span>Self-hosted gateway</span>
-        <span class="chip"><span class="dot" style="background:var(--accent-warm)"></span>On-device voice</span>
-        <span class="chip"><span class="dot" style="background:var(--teal)"></span>No accounts</span>
-      </div>
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> A new way to keep up</p>
+      <h1>Make room<br>to <em>listen.</em></h1>
+      <p class="lead">Your agents do the work. Prosody brings you the story, in a briefing made for listening.</p>
+      <a class="button" href="#experience">Explore Prosody <span aria-hidden="true">↗</span></a>
+      <p class="availability">Prosody is in development.</p>
     </div>
-    <div class="hero-visual" aria-hidden="true">
-      <div class="mark-wrap">
-        <img src="/assets/prosody-mark.svg" alt="" width="480" height="480">
+    <div class="player-scene" aria-label="Illustration of the planned Prosody listening experience">
+      <div class="scene-label">A little more clarity, wherever you are.</div>
+      <div class="player">
+        <div class="player-top"><span>YOUR BRIEFING</span><span>•••</span></div>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="player-text"><span>READY WHEN YOU ARE</span><h2>A clearer picture<br>of what matters.</h2><p>Your next briefing, made for listening.</p></div>
+        <div class="progress"><span></span></div>
+        <div class="player-bottom"><span>0:00</span><span class="play" aria-hidden="true">▶</span><span>LISTEN</span></div>
       </div>
+      <div class="scene-foot">LESS SCROLLING <span>✳</span> MORE UNDERSTANDING</div>
     </div>
   </section>
-
-  <section class="container" id="what-it-does">
-    <p class="section-eyebrow">What it does</p>
-    <h2 class="section-title">A phone line to a session that's already running</h2>
-    <div class="card-grid">
-      <article class="card">
-        <span class="kicker">Live session view</span>
-        <h3>See every turn</h3>
-        <p>Prosody tails your agent's real transcript and speaks its turns
-          back to you — condensed into short, conversational sentences
-          instead of raw markdown, paths, and tool chatter.</p>
-      </article>
-      <article class="card">
-        <span class="kicker">Approval flow</span>
-        <h3>Approve from your phone</h3>
-        <p>Consequential tool calls still stop and ask. Allow or deny by
-          voice or a tap — your agent waits on your answer, it never
-          guesses and it never auto-approves on timeout.</p>
-      </article>
-      <article class="card">
-        <span class="kicker">Self-hosted</span>
-        <h3>Yours end to end</h3>
-        <p>The gateway runs on a Mac or Linux box you own. Your phone talks
-          to it directly over your own network — no account, no relay, no
-          Prosody-run server sitting in between.</p>
-      </article>
-    </div>
+  <section class="intro wrap" id="experience">
+    <p class="eyebrow">A little space to think</p>
+    <div><h2>Good work deserves<br>a good telling.</h2><p>There’s a lot your agents can do for you. Prosody is being built to turn their output into concise, natural briefings you can take with you.</p></div>
   </section>
-
-  <section class="container" id="how-it-works">
-    <p class="section-eyebrow">How it works</p>
-    <h2 class="section-title">Four steps, all of them on your own machines</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <div>
-          <h3>Run the gateway</h3>
-          <p>A small background service runs on each machine hosting a
-            coding session — a Mac mini, a laptop, a workstation. It reads
-            your agent's session state directly; nothing is uploaded
-            anywhere to make this work.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <div>
-          <h3>Pair your phone</h3>
-          <p>Enter a pairing code once. The app and your gateway trust each
-            other over an encrypted connection from then on — no account,
-            no login, no identity anyone but you manages.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <div>
-          <h3>Walk away</h3>
-          <p>Keep talking to your session over your own Wi-Fi. Hear it
-            work, speak your replies, glance at the screen only when you
-            want to. A private tailnet for reaching it away from home is
-            next.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <div>
-          <h3>Approve what matters</h3>
-          <p>Every consequential step still stops and asks before it runs.
-            Prosody adds a voice channel to that decision — it doesn't
-            remove the decision.</p>
-        </div>
-      </div>
-    </div>
+  <section class="features wrap" aria-label="The planned experience">
+    <article><span class="feature-number">01 / LISTEN</span><div class="feature-icon">◖))</div><h3>Hear the important parts.</h3><p>Get the result, the context, and the details that matter in a briefing designed for your ears.</p></article>
+    <article><span class="feature-number">02 / FOLLOW ALONG</span><div class="feature-icon">▧</div><h3>See the whole picture.</h3><p>Follow along with images and supplied media, and return to the original source when you want to go deeper.</p></article>
+    <article><span class="feature-number">03 / KEEP MOVING</span><div class="feature-icon">↗</div><h3>Take it at your pace.</h3><p>Move through your queue, pick up where you left off, and make listening part of your day.</p></article>
   </section>
-
-  <section class="container" id="architecture">
-    <p class="section-eyebrow">Architecture</p>
-    <h2 class="section-title">Built for people who already run their own machines</h2>
-    <div class="status-strip">
-      <div>
-        <div class="label">Voice</div>
-        <div class="value">on-device (Apple Speech) — no audio leaves your phone</div>
-      </div>
-      <div>
-        <div class="label">Transport</div>
-        <div class="value">TLS, trusted on first pairing</div>
-      </div>
-      <div>
-        <div class="label">Reachability</div>
-        <div class="value">your home network today, a private tailnet next</div>
-      </div>
-      <div>
-        <div class="label">Accounts</div>
-        <div class="value">none</div>
-      </div>
-    </div>
-  </section>
+  <section class="how wrap" id="how-it-works"><div><p class="eyebrow">How it’s imagined</p><h2>From your agents<br>to your ears.</h2></div><div class="steps"><div><span>01</span><p><strong>Connect an agent.</strong> Give a compatible agent a place to send its work.</p></div><div><span>02</span><p><strong>Make it a briefing.</strong> Prosody is designed to shape text into a concise narration, alongside any supplied media.</p></div><div><span>03</span><p><strong>Listen when it suits you.</strong> Open your feed and catch up one item at a time.</p></div></div></section>
+  <section class="closing wrap"><div><p class="eyebrow">More signal. More space.</p><h2>There’s more than one<br>way to stay in the loop.</h2><p>Prosody is in development. More to come.</p></div><img src="/assets/prosody-mark.svg" alt="" width="120" height="120"></section>
 </main>
-
-<footer class="container site-footer">
-  <span>&copy; 2026 Prosody. Self-hosted. No accounts.</span>
-  <span><a href="/privacy">Privacy policy</a></span>
-</footer>
-
+<footer class="wrap"><a class="brand" href="/"><img src="/assets/prosody-mark.svg" width="28" height="28" alt="">prosody</a><span>Make room to listen.</span><a href="/privacy">Privacy</a><span>© 2026 Prosody</span></footer>
 </body>
 </html>
