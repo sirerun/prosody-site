@@ -26,3 +26,7 @@
 .welcome-card>.copyright{grid-column:1;padding:18px 0 0;font-size:11px;line-height:1.6;display:block;margin:0;color:var(--muted)}
 .back-link{display:none}
 @media(max-width:760px){.showcase{padding:20px 16px}.welcome-card{display:flex;flex-direction:column;gap:0;padding:28px 24px;border-radius:24px}.hero-message{padding:40px 0 20px}.welcome-card h1{font-size:clamp(33px,7vw,46px)}.welcome-description{font-size:16px}.app-preview{width:min(280px,100%);margin:12px auto 24px}.welcome-card>.privacy-link{align-self:center}.welcome-card>.copyright{text-align:center;padding-top:12px}}
+
+/* Display each approved screen from the unchanged design board. */
+.phone-frame{position:relative;aspect-ratio:364/802;border:0;border-radius:30px;background:var(--paper)}
+.phone-frame img{position:absolute;width:435.714286%;max-width:none;height:auto;left:-7.967033%;top:-10.349127%;object-fit:initial}

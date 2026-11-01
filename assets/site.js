@@ -1,7 +1,8 @@
 const slides = [
-  ['inbox', 'Your inbox', 'Inbox mockup showing updates from Claude Code, Codex, and Muse.'],
-  ['listening', 'Listen on your time', 'Listening mockup showing a release briefing, waveform, and playback controls.'],
-  ['rules', 'Your rules', 'Rules mockup showing notifications for decisions, completed work, and a daily catch-up.']
+  [29, 'Narrated briefing', 'Ratified Current Blue design: narrated briefing with waveform and playback controls.'],
+  [418, 'Supplied audio', 'Ratified Current Blue design: original audio playback in dark mode.'],
+  [807, 'Image and narration', 'Ratified Current Blue design: an image accompanied by narration.'],
+  [1196, 'Supplied video', 'Ratified Current Blue design: original video playback.']
 ];
 let current = 0;
 let timer;
@@ -11,7 +12,7 @@ function show(offset) {
   current = (current + offset + slides.length) % slides.length;
   const [file, title, description] = slides[current];
   const screen = document.getElementById('app-screen');
-  screen.src = `/assets/screens/${file}.svg`;
+  screen.style.left = `${-file / 364 * 100}%`;
   screen.alt = description;
   document.getElementById('slide-caption').textContent = `${current + 1} / 3 · ${title}`;
 }
