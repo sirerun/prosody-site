@@ -14,7 +14,7 @@ function show(offset) {
   const screen = document.getElementById('app-screen');
   screen.style.left = `${-file / 364 * 100}%`;
   screen.alt = description;
-  document.getElementById('slide-caption').textContent = `${current + 1} / 3 · ${title}`;
+  document.getElementById('slide-caption').textContent = `${current + 1} / ${slides.length} · ${title}`;
 }
 function stop() {
   clearInterval(timer);
