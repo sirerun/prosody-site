@@ -1,8 +1,8 @@
 const slides = [
+  [1196, 'Supplied video', 'Ratified Current Blue design: original video playback.'],
   [29, 'Narrated briefing', 'Ratified Current Blue design: narrated briefing with waveform and playback controls.'],
   [418, 'Supplied audio', 'Ratified Current Blue design: original audio playback in dark mode.'],
-  [807, 'Image and narration', 'Ratified Current Blue design: an image accompanied by narration.'],
-  [1196, 'Supplied video', 'Ratified Current Blue design: original video playback.']
+  [807, 'Image and narration', 'Ratified Current Blue design: an image accompanied by narration.']
 ];
 let current = 0;
 let timer;

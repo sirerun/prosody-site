@@ -29,4 +29,4 @@
 
 /* Display each approved screen from the unchanged design board. */
 .phone-frame{position:relative;aspect-ratio:364/802;border:0;border-radius:30px;background:var(--paper)}
-.phone-frame img{position:absolute;width:435.714286%;max-width:none;height:auto;left:-7.967033%;top:-10.349127%;object-fit:initial}
+.phone-frame img{position:absolute;width:435.714286%;max-width:none;height:auto;left:-328.571429%;top:-10.349127%;object-fit:initial}
